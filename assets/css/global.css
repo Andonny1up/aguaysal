@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+section{
+    margin-top: 5rem;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+@media (min-width: 576px){
+    h2{
+        font-size: 2rem;
+    }
+}
+@media (min-width: 768px){
+    h2{
+        font-size: 2.5rem;
+    }
+}
