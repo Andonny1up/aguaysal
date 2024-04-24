@@ -334,19 +334,79 @@ header{
     transform-origin: center center;
 }
       
-  @keyframes rotation {
+@keyframes rotation {
     0% {
       transform: rotate(0deg);
     }
     100% {
       transform: rotate(360deg);
     }
-  } 
-  @keyframes rotationBack {
+} 
+@keyframes rotationBack {
     0% {
       transform: rotate(0deg);
     }
     100% {
       transform: rotate(-360deg);
     }
-  }  
+}
+
+#Tours{
+    background-color: var(--color-background-20);
+    background-image: url(../images/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+}
+.cards-service{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+@media (min-width: 992px){
+    .cards-service{
+        flex-wrap: nowrap;
+    }
+}
+.card-service{
+    background-color: var(--color-secondary-50);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: all 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-service:hover{
+    background-color: var(--color-primary-50);
+}
+.card-service:hover figure i{
+    color: var(--color-primary-50);
+}
+.card-service figure{
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-background-10);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-service figure i{
+    color: var(--color-secondary-60);
+    font-size: 2.5rem;
+}
+.card-service h3{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--color-background-10);
+    margin: 1rem 0;
+}
+.card-service p{
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--color-background-10);
+}
